@@ -1,0 +1,21 @@
+{
+  "name": "bowditch-traverse",
+  "version": "1.0.0",
+  "description": "Bowditch 闭合导线平差与坐标改正核验后端（API + CLI，TypeScript + Node.js + SQLite）",
+  "private": true,
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist-test",
+    "start": "node dist/cli.js serve",
+    "demo": "npm run build && node dist/cli.js demo",
+    "cli": "node dist/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.7.0"
+  }
+}
